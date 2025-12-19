@@ -1,0 +1,486 @@
+/* .architecture-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.outer-circle {
+  width: 600px;
+  height: 600px;
+  border: 3px solid #444;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Center Circle */
+/* .center-circle {
+  width: 180px;
+  height: 180px;
+  background: #444;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+/* Small Circles */
+/* .small-circle {
+  width: 150px;
+  height: 150px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  border: 2px solid #444;
+  position: absolute;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+}
+
+.small-circle h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #222;
+} */
+
+/* 6 Circles positioned around the big circle */
+/* .circle-1 { top: -20px; left: 50%; transform: translateX(-50%); }
+.circle-2 { top: 120px; right: -20px; }
+.circle-3 { bottom: 120px; right: -20px; }
+.circle-4 { bottom: -20px; left: 50%; transform: translateX(-50%); }
+.circle-5 { bottom: 120px; left: -20px; }
+.circle-6 { top: 120px; left: -20px; }  */
+
+/* 
+.architecture-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.outer-circle {
+  width: 650px;
+  height: 650px;
+  border: 4px solid #444;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.center-circle {
+  width: 220px;
+  height: 220px;
+  background: #444;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.small-circle {
+  width: 180px;
+  height: 180px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  border: 2px solid #444;
+  position: absolute;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.small-circle h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+
+.circle-1 { top: -30px; left: 50%; transform: translateX(-50%); }
+.circle-2 { top: 120px; right: -40px; }
+.circle-3 { bottom: 120px; right: -40px; }
+.circle-4 { bottom: -30px; left: 50%; transform: translateX(-50%); }
+.circle-5 { bottom: 120px; left: -40px; }
+.circle-6 { top: 120px; left: -40px; }
+
+@media (max-width: 900px) {
+  .outer-circle {
+    width: 500px;
+    height: 500px;
+  }
+
+  .small-circle {
+    width: 140px;
+    height: 140px;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .center-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .circle-1 { top: -20px; }
+  .circle-2 { right: -20px; }
+  .circle-3 { right: -20px; }
+  .circle-4 { bottom: -20px; }
+  .circle-5 { left: -20px; }
+  .circle-6 { left: -20px; }
+}
+
+@media (max-width: 600px) {
+  .outer-circle {
+    width: 100%;
+    height: auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-circle {
+    margin-bottom: 20px;
+    transform: none;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .small-circle {
+    position: relative;
+    margin: 20px 0;
+  }
+}
+ */
+
+
+ .architecture-container {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+
+/* DESKTOP (as is) */
+.outer-circle {
+  width: 650px;
+  height: 650px;
+  border: 4px solid #444;
+  border-radius: 50%;
+  position: relative;
+}
+
+.center-circle {
+  width: 220px;
+  height: 220px;
+  background: #444;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.small-circle {
+  width: 180px;
+  height: 180px;
+  /* background: #f5f5f5; */
+      background: linear-gradient(to top, rgb(6, 5, 5), rgb(94, 112, 247));
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #444;
+  /* position: absolute; */
+  position: absolute;
+  text-align: center;
+  padding: 26px;
+  font-size: 14px;
+}
+
+.small-circle h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* ---- POSITIONS ---- */
+.circle-1 { top: -30px; left: 50%; transform: translateX(-50%); }
+.circle-2 { top: 120px; right: -40px; }
+.circle-3 { bottom: 120px; right: -40px; }
+.circle-4 { bottom: -30px; left: 50%; transform: translateX(-50%); }
+.circle-5 { bottom: 120px; left: -40px; }
+.circle-6 { top: 120px; left: -40px; }
+
+/* ======== TABLET (MD) 768–900px ======== */
+@media (max-width: 900px) {
+  .outer-circle {
+    width: 520px;
+    height: 520px;
+  }
+
+  .small-circle {
+    width: 155px;
+    height: 155px;
+    padding: 18px;
+    font-size: 12px;
+  }
+
+  .center-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Adjusted perfect positions */
+  .circle-1 { top: -20px; }
+  .circle-2 { top: 90px; right: -25px; }
+  .circle-3 { bottom: 90px; right: -25px; }
+  .circle-4 { bottom: -20px; }
+  .circle-5 { bottom: 90px; left: -25px; }
+  .circle-6 { top: 90px; left: -25px; }
+}
+
+/* ======== MOBILE (SM) below 600px ======== */
+@media (max-width: 600px) {
+  .outer-circle {
+    width: 380px;
+    height: 380px;
+    border-width: 3px;
+  }
+
+  .small-circle {
+    width: 110px;
+    height: 110px;
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .center-circle {
+    width: 130px;
+    height: 130px;
+    font-size: 14px;
+  }
+
+  /* Perfectly scaled positions */
+  .circle-1 { top: -15px; }
+  .circle-2 { top: 70px; right: -15px; }
+  .circle-3 { bottom: 70px; right: -15px; }
+  .circle-4 { bottom: -15px; }
+  .circle-5 { bottom: 70px; left: -15px; }
+  .circle-6 { top: 70px; left: -15px; }
+}
+
+/* ======== EXTRA SMALL (360px) ======== */
+@media (max-width: 400px) {
+  .outer-circle {
+    width: 300px;
+    height: 300px;
+  }
+.fsm{
+    font-size: 18px;
+}
+  .small-circle {
+    width: 95px;
+    height: 95px;
+    padding: 12px;
+    font-size: 5px;
+    overflow: hidden;
+  }
+
+  .center-circle {
+    width: 110px;
+    height: 110px;
+    font-size: 12px;
+  }
+
+  .fontsi{
+    font-size: 11px !important;
+}
+.fontsi1{
+    font-size: 6px;
+    
+}
+
+  .circle-1 { top: -10px; }
+  .circle-2 { top: 49px; right: -10px; }
+  .circle-3 { bottom: 49px; right: -10px; }
+  .circle-4 { bottom: -10px; }
+  .circle-5 { bottom: 49px; left: -10px; }
+  .circle-6 { top: 49px; left: -10px; }
+}
+
+
+.circle-1,
+.circle-4 {
+  transform: translateX(-50%) !important;
+}
+
+
+
+
+
+/* Pratiksha footer css start */
+/* Footer start  */
+.size1{
+  height: 200px;
+  width: 380px;
+}
+
+.bggc{
+  background-color: black;
+}
+
+
+@media (max-width:400px) {
+
+.paddmob{
+  padding: 30px 30px !important;
+}
+}
+@media (max-width:768px) {
+  .bggc{
+  background-color: black;
+  padding: 50px 50px !important;
+}
+/* .size1{
+  height: 180px !important;
+  width: 290px !important;
+} */
+}
+/* Footer end */
+/* Pratiksha footer css end */
+
+
+
+
+
+
+/* Use case new start */
+/* ================= USECASES START ================= */
+
+body, html {
+  overflow-x: hidden;
+}
+
+.usecase-wrapper {
+  width: 100%;
+}
+
+/* Background */
+.usecase-bg {
+  height: 650px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Row gap */
+.usecase-row {
+  gap: 25px;
+}
+
+/* ================= USECASE CARD ================= */
+
+.usecase-box {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 15px 0px 15px;
+}
+
+/* Paragraph text */
+.usecase-box p {
+  color: #ffffff;
+}
+
+/* Card size */
+.custom-box {
+  width: 300px;
+  height: 230px;
+}
+
+/* ================= ICON CIRCLE ================= */
+
+.circle_sizee1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  transition: background 0.3s ease;
+  margin: 0 auto 10px auto;
+}
+
+/* Hover effect on circle */
+.usecase-box:hover .circle_sizee1 {
+  background: linear-gradient(45deg, #0d6efd, #6f42c1);
+}
+
+/* Icon inside circle */
+.circle_sizee1 .iconn-img {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* ================= HEADING GRADIENT ================= */
+
+.usecase-box h4 {
+  background: linear-gradient(45deg, #0d6efd, #6f42c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .usecase-bg {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .custom-box {
+    width: 260px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-box {
+    width: 100%;
+    height: 240px;
+  }
+
+  .usecase-row {
+    gap: 15px;
+  }
+}
+
+/* ================= USECASES END ================= */
