@@ -1,0 +1,84 @@
+.policy-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.policy-box {
+  color: #000;
+  background: #ffffff;
+  width: 95%;
+  max-width: 800px;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: termsFade 0.3s ease;
+}
+/* .policy-box {
+  color: #000;
+  background: #fff;
+  width: 420px;
+  padding: 20px;
+  border-radius: 8px;
+} */
+
+
+.policy-content {
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #000;
+}
+/* 
+.policy-content {
+  color: #000;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 14px;
+  margin: 15px 0;
+} */
+
+.policy-check {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.policy-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.policy-actions button {
+  padding: 6px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.policy-actions button:first-child {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.policy-actions .cancel {
+   background: #e5e7eb;
+  color: #111827;
+  from {
+   opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

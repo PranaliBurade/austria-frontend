@@ -86,6 +86,7 @@
 
 
 import React, { useEffect } from "react";
+import bgSvg from "/images/Hero-bg2.svg";
 import AOS from "aos";
 const UseCases2 = () => {
      useEffect(() => {
@@ -97,9 +98,17 @@ const UseCases2 = () => {
     <div className="usecase-wrapper">
       <div
         className="usecase-bg"
-        style={{ backgroundImage: "url('useback1.jpg')" }}
+        // style={{ backgroundImage: "url('useback1.jpg')" }}
+        style={{
+            backgroundImage: `url("${bgSvg}")`,
+            backgroundSize: "cover",
+            backgroundRepeat: "repeat",
+            backgroundPosition: "center",
+            minHeight: "520px",
+            position: "relative", // ensure boxes z-index works
+            zIndex: 1,}}
       >
-        <div className="container">
+        <div className="container ">
           <div className="row justify-content-center usecase-row">
             <h3 className="mb-3 text-primary">Use Cases</h3>
 
@@ -133,8 +142,8 @@ const UseCases2 = () => {
               </div>
             </div>
 
-            <div className="col-auto">
-              <div className="usecase-box custom-box"  data-aos="fade-up" data-aos-delay="0"   data-aos-once="false">
+            <div className="col-auto mobpadding">
+              <div className="usecase-box custom-box1x"  data-aos="fade-up" data-aos-delay="0"   data-aos-once="false">
                 <span className="circle_sizee1">
                   <i className="bi bi-shield-lock-fill iconn-img"></i>
                 </span>
@@ -143,8 +152,8 @@ const UseCases2 = () => {
               </div>
             </div>
 
-            <div className="col-auto">
-              <div className="usecase-box custom-box"  data-aos="fade-up" data-aos-delay="0"   data-aos-once="false">
+            <div className="col-auto ">
+              <div className="usecase-box custom-box "  data-aos="fade-up" data-aos-delay="0"   data-aos-once="false">
                 <span className="circle_sizee1">
                   <i className="bi bi-arrow-repeat iconn-img"></i>
                 </span>

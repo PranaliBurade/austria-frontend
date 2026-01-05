@@ -167,11 +167,20 @@
 }
  */
 
+ .archifont{
+  text-align: center;
+  margin: 50px 0px;
+    font-size: 4rem;
+  font-weight: bold;
+ color: #4da3ff;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+ }
 
  .architecture-container {
   display: flex;
   justify-content: center;
-  padding: 70px;
+  /* padding: 70px; */
 }
 
 /* DESKTOP (as is) */
@@ -475,6 +484,29 @@ body, html {
 @media (max-width: 480px) {
   .custom-box {
     width: 100%;
+    height: 240px;
+  }
+
+  .usecase-row {
+    gap: 15px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .custom-box1x {
+    width: 300px;
+    height: 230px !important;
+  }
+  .mobpadding{
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-box1x {
+    width: 360px;
     height: 240px;
   }
 

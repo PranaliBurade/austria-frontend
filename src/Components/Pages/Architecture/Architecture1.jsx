@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import bgSvg from "/images/Hero-bg2.svg";
 
 const modules = [
   {
@@ -35,14 +36,23 @@ function CircleArchitecture1() {
 
     },[]);
   return (
-    <div className="divcol1 p-5">
+    <div className=" p-5"
+    style={{
+            backgroundImage: `url("${bgSvg}")`,
+            backgroundSize: "cover",
+            backgroundRepeat: "repeat",
+            backgroundPosition: "center",
+            minHeight: "520px",
+            position: "relative", // ensure boxes z-index works
+            zIndex: 1,}}
+    >
       <h3 className="ps-5 text-primary">Architecture</h3>
     <div className="architecture-container ">
     
       <div className="outer-circle">
         {modules.map((item, index) => (
         
-          <div key={index} className={`small-circle circle-${index + 1}`}  data-aos="flip-left">
+          <div key={index} className={`small-circle circle-${index + 1}`}  data-aos="flip-left" data-aos-delay="0"   data-aos-once="false">
             <h3 className="fontsi text-light ">{item.title}</h3>
             <p className="fontsi1">{item.desc}</p>
           </div>

@@ -1,0 +1,129 @@
+/* ============================= */
+/* Full Trial Videos Page */
+/* ============================= */
+
+.full-videos-wrapper {
+  padding: 70px 0;
+  background: #000;
+}
+
+/* Title */
+.full-videos-title {
+   text-align: center;
+  margin: 50px 0px;
+    font-size: 4rem;
+  font-weight: bold;
+ color: #4da3ff;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(137, 109, 202));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card */
+
+.full-video-card {
+     height: 100%;
+  width: 100%;  
+  max-width: 520px; 
+  margin: 0 auto;   
+  border-radius: 16px;
+  padding: 22px 18px;
+  background: linear-gradient(to right, rgb(20, 20, 27), rgb(45, 6, 136));
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+  transition: all 0.35s ease;
+}
+
+.full-video-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 102, 255, 0.6);
+}
+
+/* Card Heading */
+.full-video-card h6 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.full-video-card p {
+  font-size: 13px;
+  color: #d0d0d0;
+  margin-bottom: 18px;
+}
+
+/* Watch Button */
+.full-watch-btn {
+  border: 1px solid rgb(0, 102, 255);
+  background: transparent;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.full-watch-btn:hover {
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(137, 109, 202));
+  color: #fff;
+}
+
+/* Pricing Button */
+.full-pricing-btn {
+  margin-top: 15px;
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(137, 109, 202));
+  border: none;
+  color: #fff;
+  padding: 12px 42px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.full-pricing-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(137, 109, 202, 0.9);
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .full-videos-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .full-videos-title {
+    font-size: 26px;
+  }
+
+  .full-pricing-btn {
+    width: 100%;
+  }
+}
+
+
+
+
+/* Video Frame */
+.full-video-frame {
+  width: 100%;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.full-video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import AOS from "aos";
-// import Navbar from '../../Layout/Navbar'
+import bgSvg from "/images/Hero-bg2.svg";
 function Home1() {
    useEffect(() => {
           AOS.init({duration:1000, once:true});
@@ -11,24 +11,28 @@ function Home1() {
   return (
     <>
    
-    <div className='heightbg' style={{backgroundImage:"url('bg-img2.jpg')",
-      backgroundSize: "cover",
+    <div className='py-5' 
+   
+    style={{
+        backgroundImage: `url("${bgSvg}")`,
+        backgroundSize: "cover",
+        backgroundRepeat: "repeat",
         backgroundPosition: "center",
-        width: "100%",
-        height: "600px"
-          
-    }}>
+        minHeight: "520px",
+        position: "relative", // ensure boxes z-index works
+        zIndex: 1,}}
+    >
        
    <div className='text-center text-light pt-3 '>
     <h1 className='mobiw heading1' data-aos="fade-up">"Revolutionizing Software Testing with AI-Driven Automation."</h1>
    </div>
     <div className='text-center text-light subheading'>
-      <p>AstroFroge.ai is an advanced AI-powered automation framework that learns from your test history, domain, and behavior to generate smarter, faster, and more reliable test plans and executions. From test creation to analytics — it’s automation reimagined.</p>
+      <p>Astraforge.io is an advanced AI-powered automation framework that learns from your test history, domain, and behavior to generate smarter, faster, and more reliable test plans and executions. From test creation to analytics — it’s automation reimagined.</p>
     </div>
     <div className='d-flex align-items-center gapi gap-md-4 justify-content-center'>
       <Link to="/feature" ><button className='text-light py-2 px-3 fw-bold bg-primaryi grad rounded-5 border-0' >Explore Features</button></Link>
-        <Link to="/architecture" ><button className='text-light py-2 px-3 fw-bold bg-primaryi grad rounded-5 border-0' >View Architecture</button></Link>
-                <Link to="" ><button className='text-light py-2 px-3 fw-bold bg-primaryi grad rounded-5 border-0' > Request Demo</button></Link>
+        <Link to="/architectureall" ><button className='text-light py-2 px-3 fw-bold bg-primaryi grad rounded-5 border-0' >View Architecture</button></Link>
+                <Link to="/gettrial" ><button className='text-light py-2 px-3 fw-bold bg-primaryi grad rounded-5 border-0' >Get a Demo</button></Link>
 
     </div>
     </div>

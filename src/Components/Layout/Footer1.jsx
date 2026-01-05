@@ -1,6 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { useState } from "react";
+import TermsPopup from './TermAndPrivacyAllPages/TermsPopup';
+import PrivacyPopup from './TermAndPrivacyAllPages/PrivacyPopup';
+
 
 function Footer1() {
+  const [showTerms, setShowTerms] = useState(false);
+const [showPrivacy, setShowPrivacy] = useState(false);
+
   return (
     <>
       <div className='container-fluid bggc'>
@@ -21,11 +29,11 @@ function Footer1() {
             <div className='col-lg-2 col-12 col-md-2 col-sm-6 col-xl-2'>
               <h5 className='ft_head'><b>Quick Links</b></h5>
               <div className='justify-content-start text_footer'>
-                <p><a>Home</a></p>
-                <p><a>Features</a></p>
-                <p><a>Pricing</a></p>
-                <p><a>Contact</a></p>
-                <p><a>Documentation</a></p>
+                <p><Link to="/" className='text-decoration-none text-light'>Home</Link></p>
+                <p><Link to="/about" className='text-decoration-none text-light'>Features</Link></p>
+                <p><Link to="/pricing" className='text-decoration-none text-light'>Pricing</Link></p>
+                <p><Link to="/contact" className='text-decoration-none text-light'>Contact</Link></p>
+                <p><Link to="/" className='text-decoration-none text-light'>Documentation</Link></p>
               </div>
             </div>
 
@@ -47,15 +55,18 @@ function Footer1() {
               <div className='justify-content-start text_footer'>
                 <p>
                   <span><i className="bi bi-geo-alt-fill me-2"></i></span>
-                  Nagpur, Maharashtra, India
+                  {/* Nagpur, Maharashtra, India */}
+                  {/* Austria */}
+                   Austria, country in Central Europe.
                 </p>
                 <p>
                   <span><i className="bi bi-envelope-fill me-2"></i></span>
-                  contact@astraforge.io
+                  {/* gainewarsachin@gmail.com */}
+                  info@astrofroge.io
                 </p>
                 <p>
                   <span><i className="bi bi-telephone-fill me-2"></i></span>
-                  +91 90000 00000
+                  +91 93999 85410 , +43 6705540609
                 </p>
               </div>
             </div>
@@ -79,11 +90,25 @@ function Footer1() {
             <div>
               <p>© 2025 Astraforge.io</p>
             </div>
-            <div className='d-inline-flex'>
+            {/* <div className='d-inline-flex'>
               <p className='me-4'>Terms & Conditions</p>
               <p>Privacy Policy</p>
-            </div>
+            </div> */}
+            <div className='d-inline-flex'>
+  <p className='me-4' style={{cursor:"pointer"}} onClick={() => setShowTerms(true)}>
+    Terms & Conditions
+  </p>
+  <p style={{cursor:"pointer"}} onClick={() => setShowPrivacy(true)}>
+    Privacy Policy
+  </p>
+</div>
+
+{showTerms && <TermsPopup onClose={() => setShowTerms(false)} />}
+{showPrivacy && <PrivacyPopup onClose={() => setShowPrivacy(false)} />}
+
           </div>
+
+          
 
         </div>
       </div>

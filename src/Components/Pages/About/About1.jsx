@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+// import bgSvg from "/Hero-bg2.svg";
+import bgSvg from "/images/Hero-bg2.svg"
 
 const About1 = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,14 +24,26 @@ const About1 = () => {
   }, []);
 
   return (
-    <div className="about-us">
-      <div className="background-image" style={{ backgroundImage: "url('backgroundimg.jpg')" }}></div>
+    <div className="container-fluid  about-us"
+    style={{
+            backgroundImage: `url("${bgSvg}")`,
+            backgroundSize: "cover",
+            backgroundRepeat: "repeat",
+            backgroundPosition: "center",
+            minHeight: "520px",
+            position: "relative", // ensure boxes z-index works
+            zIndex: 1,}}
+        >
+    
+      {/* <div className="background-image" 
+      style={{ backgroundImage: "url('/images/backgroundimg.jpg')" }}
+      ></div> */}
       <div className="overlay"></div>
       <div className={`about-content ${isVisible ? 'fade-in' : ''}`}>
         <h1 className="title">About Us</h1>
         <div className="glass-card">
           <p className="description">
-            AstroFroge.ai is built by engineers passionate about automation, intelligence, and quality.
+            AstroFroge.io is built by engineers passionate about automation, intelligence, and quality.
             Our mission is to make testing smarter, faster, and self-evolving — reducing manual effort while increasing software reliability.
           </p>
         </div>

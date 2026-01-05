@@ -4,6 +4,7 @@ import Home2 from './Home2';
 import CircleArchitecture1 from '../Architecture/Architecture1';
 import UseCases1 from '../Usecases/UseCases1';
 import UseCases2 from '../Usecases/UseCases2';
+import Home6 from './Home6';
 
 
 
@@ -15,6 +16,7 @@ function Home() {
    <Home2/>
     <CircleArchitecture1/>
     {/* <UseCases1/> */}
+    <Home6/>
     <UseCases2/>
    </>
   )

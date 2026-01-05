@@ -1,6 +1,6 @@
-import React from "react";
-// import "./CircleArchitecture.css";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import bgSvg from "/images/Hero-bg2.svg";
 
 const modules = [
   {
@@ -29,15 +29,34 @@ const modules = [
   },
 ];
 
-function CircleArchitecture1() {
+function Architecturebtn() {
+    useEffect(() => {
+        AOS.init({duration:1000, once:true});
+            AOS.refresh();
+
+    },[]);
   return (
-    <div className="architecture-container">
+    <div className=" p-5"
+    style={{
+            backgroundImage: `url("${bgSvg}")`,
+            backgroundSize: "cover",
+            backgroundRepeat: "repeat",
+            backgroundPosition: "center",
+            minHeight: "520px",
+            position: "relative", // ensure boxes z-index works
+            zIndex: 1,}}
+    >
+      <h1 className="archifont text-primary">Architecture</h1>
+    <div className="architecture-container ">
+    
       <div className="outer-circle">
         {modules.map((item, index) => (
-          <div key={index} className={`small-circle circle-${index + 1}`}>
-            <h3 className="fontsi">{item.title}</h3>
+        
+          <div key={index} className={`small-circle circle-${index + 1}`}  data-aos="flip-left" data-aos-delay="0"   data-aos-once="false">
+            <h3 className="fontsi text-light ">{item.title}</h3>
             <p className="fontsi1">{item.desc}</p>
           </div>
+          
         ))}
 
         <div className="center-circle">
@@ -45,7 +64,8 @@ function CircleArchitecture1() {
         </div>
       </div>
     </div>
+    </div>
   );
 }
 
-export default CircleArchitecture1;
+export default Architecturebtn;

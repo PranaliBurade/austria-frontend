@@ -1,0 +1,52 @@
+<!-- save as hero-bg.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="g-bg" cx="50%" cy="45%" r="80%">
+      <stop offset="0%" stop-color="#0b0d0f"/>
+      <stop offset="60%" stop-color="#070709"/>
+      <stop offset="100%" stop-color="#030303"/>
+    </radialGradient>
+
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.8 0"/>
+    </filter>
+
+    <!-- subtle neon strokes -->
+    <linearGradient id="line-grad-1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#3ea7ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#8b3eff" stop-opacity="0.06"/>
+    </linearGradient>
+
+    <linearGradient id="line-grad-2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff5ea6" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#21e6c1" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="100%" height="100%" fill="url(#g-bg)"/>
+
+  <!-- blurred glowing blobs for depth -->
+  <g filter="url(#softBlur)" opacity="0.6">
+    <ellipse cx="300" cy="120" rx="480" ry="180" fill="#0b2a3a" opacity="0.12"/>
+    <ellipse cx="1400" cy="200" rx="520" ry="240" fill="#2b0b2f" opacity="0.08"/>
+    <ellipse cx="900" cy="700" rx="620" ry="260" fill="#06262c" opacity="0.06"/>
+  </g>
+
+  <!-- curvy neon lines -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.95">
+    <path d="M-50 220 C 120 140, 360 80, 640 130 C 920 180, 1180 90, 1680 40" stroke="url(#line-grad-1)" opacity="0.9"/>
+    <path d="M-50 540 C 160 460, 380 380, 700 430 C 980 480, 1200 390, 1680 340" stroke="url(#line-grad-2)" opacity="0.85"/>
+    <path d="M-50 380 C 90 320, 320 260, 600 300 C 880 340, 1160 270, 1680 210" stroke="#11262b" stroke-opacity="0.12" stroke-width="4"/>
+  </g>
+
+  <!-- very thin faint strokes for texture -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1">
+    <path d="M0 840 C 200 700, 520 620, 920 660 C 1260 690, 1400 720, 1600 700"/>
+  </g>
+</svg>

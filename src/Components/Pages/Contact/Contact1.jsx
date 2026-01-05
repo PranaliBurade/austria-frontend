@@ -13,7 +13,7 @@ function Contact1() {
         <div
           className="bg-image"
           style={{
-            backgroundImage: "url('con4.avif')",
+            backgroundImage: "url('/images/con4.avif')",
           }}
         ></div>
       </div>
@@ -35,7 +35,7 @@ function Contact1() {
 
           <div className="d-flex align-items-center justify-content-between mt-3 ">
             <p className="m-0 text-light">
-              <strong className="fw-light">Email:</strong><span> info@astrofroge.ai</span>
+              <strong className="fw-light">Email:</strong><span> info@astrofroge.io </span>
             </p>
 
             <div className="social-links d-flex align-items-center">

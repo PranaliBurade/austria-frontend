@@ -7,8 +7,9 @@ const Features3 = () => {
     
         },[]);       
   return (
-    <div className="services-wrapper py-5">
-      <div className="container">
+    <div className="services-wrapper ">
+      <div className="container">y
+
         <div className="row g-4">
           {/* Card 1 */}
           <div className="col-md-4">
@@ -24,37 +25,32 @@ const Features3 = () => {
               </div>
               <h4>AI-Powered Test Generation</h4>
               <p>
-                AstroForge.ai intelligently generates high-quality test assets
-                by learning from your testing history and domain knowledge.
+                Intelligent test creation driven by history, context, and domain knowledge.
               </p>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-file-earmark-text me-2"></i>
-                  Auto RSR / Test Plans – Generates requirement-aligned test
-                  plans for Jira, Xray, etc.
+                  Auto Test Plans – Requirement-aligned plans (Jira, Xray)
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-brain me-2"></i>
-                  Context-Aware Test Cases – Uses past tests, execution data &
-                  domain logic
+                  Context-Aware Tests – Learns from past executions & logic
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-sliders me-2"></i>
-                  Prompt-Driven Expansion – Expands coverage based on risk &
-                  priority
+                  Prompt-Driven Coverage – Expands tests by risk & priority
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-lightning-charge me-2"></i>
-                  Smart Prioritization – Executes high-impact tests first
+                  Smart Prioritization – Runs high-impact tests first
                 </li>
 
                 <li className="d-flex align-items-start">
                   <i className="bi bi-layout-text-window-reverse me-2"></i>
-                  Visual Test Scenarios – Supports UI, gesture & layout-based
-                  testing
+                  Visual Scenarios – UI, gesture & layout testing
                 </li>
               </ul>
             </div>
@@ -75,36 +71,32 @@ const Features3 = () => {
               </div>
               <h4>Deep UI Element Intelligence</h4>
               <p>
-                AstroForge.ai understands UI elements deeply using vision, DOM,
-                and context awareness.
+                AI-driven understanding of UI using vision, DOM, and context.
               </p>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-eye me-2"></i>
-                  AI Element Detection – Contextual vision (DOM, visual &
-                  accessibility)
+                 AI Element Detection – DOM, visual & accessibility aware.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-crosshair me-2"></i>
-                  Robust Locators – Adaptive CSS, XPath & ARIA selectors
+                  Robust Locators – Adaptive CSS, XPath & ARIA,.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-arrow-repeat me-2"></i>
-                  Self-Healing – Auto-repairs broken selectors at runtime
+                  Self-Healing – Auto-fixes broken selectors.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-lightning me-2"></i>
-                  Dynamic Handling – Manages animations, hidden & shadow DOM
-                  elements
+                  Dynamic Handling – Animations, hidden & Shadow DOM.
                 </li>
 
                 <li className="d-flex align-items-start">
                   <i class="bi bi-image me-2"></i>
-                  Visual Matching – Finds elements even when layout or IDs
-                  change
+                  Visual Matching – Works despite layout or ID changes.
                 </li>
               </ul>
             </div>
@@ -124,28 +116,27 @@ const Features3 = () => {
               </div>
               <h4>Modular Integrations</h4>
               <p>
-                AstroForge.ai’s plug-and-play architecture lets you choose your
-                tools without vendor lock-in.
+                Plug-and-play integrations with full freedom no vendor lock-in.
               </p>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-layers me-2"></i>
-                  Interchangeable Test Executors – Cypress, Selenium, Playwright
+                  Test Executors – Cypress, Selenium, Playwright.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-kanban me-2"></i>
-                  Test Management Systems – Xray, Jira, Zephyr, TestLink
+                  Test Management – Jira, Xray, Zephyr, TestLink.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-sliders me-2"></i>
-                  Flexible Configuration – Switch tools via simple config
+                  Easy Switching – Change tools via config.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-infinity me-2"></i>
-                  CI/CD Integration – Jenkins, GitLab, GitHub Actions
+                  CI/CD Ready – Jenkins, GitLab, GitHub Actions.
                 </li>
 
                 <li className="d-flex align-items-start">
@@ -177,32 +168,32 @@ const Features3 = () => {
               </div>
               <h4>Reporting & Analytics</h4>
               <p>
-                Go beyond pass/fail metrics with intelligent insights into test stability, performance, and trends.
+                Smart insights beyond pass/fail to track test health, performance, and trends.
               </p>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-speedometer2 me-2"></i>
-                 Real-Time Dashboards – Live execution status & coverage
+                 Real-Time Dashboards – Live status & coverage.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-graph-up-arrow me-2"></i>
-                  Trend Analysis – Detect flakiness & recurring failures
+                  Trend Analysis – Spot flaky & repeat failures.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-cpu me-2"></i>
-                Predictive Insights – AI forecasts potential failure points
+                Predictive Insights – AI-based failure forecasts.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i className="bi bi-exclamation-triangle me-2"></i>
-                 Flakiness Detection – Identifies unstable tests over time
+                 Flakiness Detection – Find unstable tests early.
                 </li>
 
                 <li className="d-flex align-items-start">
                   <i className="bi bi-pie-chart-fill me-2"></i>
-                 Coverage Visualization – Tested vs untested insights
+                 Coverage View – Tested vs untested clarity
                 </li>
 
                 <li className="d-flex align-items-start">
@@ -225,7 +216,7 @@ const Features3 = () => {
   <i className="bi bi-arrow-right arrow-hover"></i>
 </span>
               </div>
-              <h4>CI/CD Automation</h4>
+              <h4>CI/CD CI/CD</h4>
               <p>
                 Bring automation into your DevOps lifecycle with minimal setup.
               </p>
@@ -330,32 +321,32 @@ const Features3 = () => {
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-diagram-3 me-2"></i>
-                Deep Crawling – Configurable URL exploration
+                Deep Crawling – Configurable URL exploration.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-list-check me-2"></i>
-                OWASP Top 10 Checks – Industry-standard compliance
+                OWASP Top 10 – Industry-standard checks
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-bug me-2"></i>
-                Vulnerability Detection – XSS, SQLi, CSRF & more
+                Vulnerability Detection – XSS, SQLi, CSRF & more.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-key me-2"></i>
-                 Dependency & Secrets Scanning – Detects risky packages & exposed credentials
+                 Dependency & Secrets Scan – Risky packages & exposed keys.
                 </li>
 
                 <li className="d-flex align-items-start">
                   <i class="bi bi-code-slash me-2"></i>
-                 SAST & API Security – Secure code & APIs
+                 SAST & API Security – Secure code and APIs
                 </li>
 
                 <li className="d-flex align-items-start">
                   <i class="bi bi-file-earmark-check me-2"></i>
-                 Compliance Reports – OWASP, GDPR & PCI-DSS ready
+                 Compliance Reports – OWASP, GDPR, PCI-DSS ready
                 </li>
               </ul>
             </div>
@@ -375,37 +366,37 @@ const Features3 = () => {
               </div>
               <h4>Knowledge Loop</h4>
               <p>
-               AstroForge.ai continuously learns from outcomes to improve test quality over time.
+               Continuous learning that improves test quality over time.
               </p>
               <ul className="list-unstyled">
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-arrow-repeat me-2"></i>
-                 Automated Knowledge Updates – Auto-documents results & patterns.
+                Auto Knowledge Updates – Documents results & patterns.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-chat-dots me-2"></i>
-                 Smart Feedback Loop – Suggests test improvements from executions.
+                 Smart Feedback Loop – Suggests test improvements.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-clock-history me-2"></i>
-                  Versioned Test Artifacts – Tracks test history & evolution.
+                 Versioned Artifacts – Tracks test evolution
                 </li>
 
                 <li className="d-flex align-items-start">
                   <i class="bi bi-shield-exclamation me-2"></i>
-                  Quality & Security Signals – Detects risky dependencies & secrets.
+                  Quality & Security Signals – Flags risky deps & secrets.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-file-earmark-bar-graph me-2"></i>
-                 Insightful Reports – HTML & JSON reports with severity ranking.
+                 Insightful Reports – HTML & JSON with severity.
                 </li>
 
                 <li className="d-flex align-items-start mb-2">
                   <i class="bi bi-patch-check me-2"></i>
-                 Compliance Ready – OWASP, GDPR & PCI-DSS support.
+                 Compliance Ready – OWASP, GDPR, PCI-DSS.
                 </li>
               </ul>
             </div>

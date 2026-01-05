@@ -1,0 +1,129 @@
+/* ============================= */
+/* Demo Videos Section CSS */
+/* ============================= */
+
+.demo-videos-wrapper {
+  padding: 60px 0;
+  background: #000;
+}
+
+.demo-videos-title {
+   text-align: center;
+  margin: 50px 0px;
+    font-size: 4rem;
+  font-weight: bold;
+ color: #4da3ff;
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(137, 109, 202));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card Styling */
+.demo-video-card { 
+   height: 100%;
+  width: 100%;  
+  max-width: 420px; 
+  margin: 0 auto;   
+  /* width: 400px; */
+  background: linear-gradient(to right, rgb(20, 20, 27), rgb(45, 6, 136));
+  border-radius: 14px;
+  padding: 25px;
+  /* height: 100%; */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: all 0.35s ease;
+  color: #fff;
+  text-align: center;
+}
+
+.demo-video-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 102, 255, 0.6);
+}
+
+/* Heading */
+.demo-video-card h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.demo-video-card p {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+/* Watch Button */
+.demo-watch-btn {
+  border: 1px solid rgb(0, 102, 255);
+  color: #fff;
+  background: transparent;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.demo-watch-btn:hover {
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(137, 109, 202));
+  color: #fff;
+}
+
+/* Start Trial Button */
+.demo-trial-btn {
+  background: linear-gradient(to right, rgb(0, 102, 255), rgb(137, 109, 202));
+  border: none;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.demo-trial-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(137, 109, 202, 0.8);
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .demo-videos-title {
+    font-size: 32px;
+  }
+
+  .demo-video-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .demo-videos-title {
+    font-size: 26px;
+  }
+
+  .demo-trial-btn {
+    width: 100%;
+  }
+}
+
+
+
+
+/* Video Frame */
+.demo-video-frame {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.demo-video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}

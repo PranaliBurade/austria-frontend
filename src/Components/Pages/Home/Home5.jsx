@@ -40,7 +40,7 @@ export default function ArchitectureOrbit() {
       {/* subtle watermark using your uploaded image */}
       <img
         className="diagram-watermark"
-        src="/mnt/data/Screenshot 2025-11-21 154555.png"
+        src="/images/mnt/data/Screenshot 2025-11-21 154555.png"
         alt="diagram reference"
       />
 
