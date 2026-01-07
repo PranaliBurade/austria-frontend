@@ -38,14 +38,14 @@ function Home2() {
                 position: "relative", // ensure boxes z-index works
                 zIndex: 1,}}
     >
-        <h3 className='text-start ms-md-5 mb-5 text-primary astmobil'>Why Astraforge.ai ?</h3>
+        <h3 className='text-start ms-md-5 mb-5 text-primary astmobil'>Why astraforge.io ?</h3>
     <div className='row align-items-center justify-content-center g-5 px-md-5'>
     <div className='col-12 col-sm-6 col-md-12 col-lg-5 col-xl-5 col-xxl-6 '>
       
         <div className='d-flex align-items-center justify-content-center rounded-5 pt-1 pe-md-3 pe-sm-0 ps-md-1 ps-sm-0 pb-5 divcol11 bg-dark12 '>
        <ul className='list-unstyled padend pt-4'>
         <li className='text-justify text-light mb-3'><i className="bi bi-gear-wide-connected fs-6 me-2 text-primary"></i>Traditional automation frameworks require manual test design, locator maintenance, and time-consuming configuration.</li>
-        <li className='text-justify text-light'><i className="bi bi-gear-wide-connected fs-6 me-2 text-primary"></i>AstroFroge.ai brings intelligence, adaptability, and automation together — making your testing lifecycle self-aware, self-healing, and continuously improving.</li>
+        <li className='text-justify text-light'><i className="bi bi-gear-wide-connected fs-6 me-2 text-primary"></i>Astraforge.io brings intelligence, adaptability, and automation together — making your testing lifecycle self-aware, self-healing, and continuously improving.</li>
        </ul>
         </div>
     </div>
@@ -70,14 +70,18 @@ function Home2() {
                 </div>
                  <div className='items  my-4 mx-4 rounded-4 d-flex align-items-center justify-content-center px-4 py-4'>
                 <div className='bg-light text-dark rounded-circle  p-3 me-2 d-flex justify-content-center align-items-center' style={{ width: "60px", height: "60px" }}>
-                  <i class="bi bi-bullseye fs-3"></i>
+                  {/* <i class="bi bi-bullseye fs-3"></i> */}
+                  <i class="bi bi-lightbulb fs-3"></i>
+
                 </div>
                 <div><p className='text-light'>Generate intelligent test cases automatically</p>
                 </div>
                 </div>
                  <div className='items  my-4 mx-4 rounded-4 d-flex align-items-center justify-content-center px-4 py-4'>
                 <div className='bg-light text-dark rounded-circle  p-3 me-2 d-flex justify-content-center align-items-center' style={{ width: "60px", height: "60px" }}>
-                  <i class="bi bi-ui-radios-grid fs-3"></i>
+                  {/* <i class="bi bi-ui-radios-grid fs-3"></i> */}
+                  <i class="bi bi-arrow-repeat fs-3"></i>
+
                 </div>
                 <div><p className='text-light'>Adapt tests dynamically with self-healing locators</p>
                 </div>
@@ -92,7 +96,8 @@ function Home2() {
                 </div>
                  <div className='items  my-4 mx-4 rounded-4 d-flex align-items-center justify-content-center px-4 py-4'>
                 <div className='bg-light text-dark rounded-circle  p-3 me-2 d-flex justify-content-center align-items-center' style={{ width: "60px", height: "60px" }}>
-                  <i class="bi bi-bullseye fs-3"></i>
+                  {/* <i class="bi bi-bullseye fs-3"></i> */}
+                  <i class="bi bi-shield-lock fs-3"></i>
                 </div>
                 <div><p className='text-light'>Integrate security and performance validation seamlessly</p>
                 </div>
@@ -130,7 +135,9 @@ function Home2() {
                 </div>
                  <div className='items  my-4 mx-4 rounded-4 d-flex align-items-center justify-content-center px-4 py-4'>
                 <div className='bg-light text-dark rounded-circle  p-3 me-2 d-flex justify-content-center align-items-center' style={{ width: "60px", height: "60px" }}>
-                  <i class="bi bi-bullseye fs-3"></i>
+                  {/* <i class="bi bi-bullseye fs-3"></i> */}
+                  <i class="bi bi-shield-lock fs-3"></i>
+
                 </div>
                 <div><p className='text-light'>Integrate security and performance validation seamlessly</p>
                 </div>

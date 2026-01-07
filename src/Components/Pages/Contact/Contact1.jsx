@@ -39,9 +39,46 @@ function Contact1() {
             </p>
 
             <div className="social-links d-flex align-items-center">
-              <i className="bi bi-github fs-5 mx-2"></i>
+              {/* <i className="bi bi-github fs-5 mx-2"></i>
               <i className="bi bi-linkedin fs-5 mx-2"></i>
-              <i className="bi bi-file-earmark-text-fill fs-5 mx-2"></i>
+              <i className="bi bi-file-earmark-text-fill fs-5 mx-2"></i> */}
+
+
+               {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/company/astraforge-io/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Astraforge LinkedIn"
+      title="LinkedIn"
+      className="text-decoration-none"
+    >
+      <i className="bi bi-linkedin  fs-5 mx-2"></i>
+    </a>
+
+    {/* X (Twitter) */}
+    <a
+      href="https://x.com/astraforgeio"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Astraforge X"
+      title="Twitter / X"
+      className="text-decoration-none"
+    >
+      <i className="bi bi-twitter-x  fs-5 mx-2"></i>
+    </a>
+
+    {/* Hashnode Blog */}
+    <a
+      href="https://hashnode.com/@astraforgeio"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Astraforge Blog"
+      title="Blog"
+      className="text-decoration-none"
+    >
+      <i className="bi bi-file-earmark-text-fill  fs-5 mx-2"></i>
+    </a>
             </div>
           </div>
 

@@ -19,13 +19,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   animation: termsFade 0.3s ease;
 }
-/* .policy-box {
-  color: #000;
-  background: #fff;
-  width: 420px;
-  padding: 20px;
-  border-radius: 8px;
-} */
+
 
 
 .policy-content {
@@ -36,14 +30,6 @@
   line-height: 1.7;
   color: #000;
 }
-/* 
-.policy-content {
-  color: #000;
-  max-height: 200px;
-  overflow-y: auto;
-  font-size: 14px;
-  margin: 15px 0;
-} */
 
 .policy-check {
   display: flex;

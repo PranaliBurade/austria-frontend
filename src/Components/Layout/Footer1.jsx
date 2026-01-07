@@ -30,9 +30,10 @@ const [showPrivacy, setShowPrivacy] = useState(false);
               <h5 className='ft_head'><b>Quick Links</b></h5>
               <div className='justify-content-start text_footer'>
                 <p><Link to="/" className='text-decoration-none text-light'>Home</Link></p>
-                <p><Link to="/about" className='text-decoration-none text-light'>Features</Link></p>
+                <p><Link to="/feature" className='text-decoration-none text-light'>Features</Link></p>
                 <p><Link to="/pricing" className='text-decoration-none text-light'>Pricing</Link></p>
                 <p><Link to="/contact" className='text-decoration-none text-light'>Contact</Link></p>
+                <p><Link to="/faq" className='text-decoration-none text-light'>FAQ</Link></p>
                 <p><Link to="/" className='text-decoration-none text-light'>Documentation</Link></p>
               </div>
             </div>
@@ -71,15 +72,49 @@ const [showPrivacy, setShowPrivacy] = useState(false);
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className='col-lg-2 col-12 col-md-2 col-sm-6 col-xl-2 '>
-              <h5 className='ft_head'><b>Social Links</b></h5>
-              <div className='justify-content-start d-inline-flex gap-4 text_footer'>
-                <a><i className="bi bi-linkedin p-1 circle_size"></i></a>
-                <a><i className="bi bi-github p-1 circle_size"></i></a>
-                <a><i className="bi bi-file-earmark-text-fill p-1 circle_size"></i></a>
-              </div>
-            </div>
+            <div className='col-lg-2 col-12 col-md-2 col-sm-6 col-xl-2'>
+  <h5 className='ft_head'><b>Social Links</b></h5>
+
+  <div className='justify-content-start d-inline-flex gap-4 text_footer'>
+
+    {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/company/astraforge-io/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Astraforge LinkedIn"
+      title="LinkedIn"
+      className="text-decoration-none"
+    >
+      <i className="bi bi-linkedin p-1 circle_size"></i>
+    </a>
+
+    {/* X (Twitter) */}
+    <a
+      href="https://x.com/astraforgeio"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Astraforge X"
+      title="Twitter / X"
+      className="text-decoration-none"
+    >
+      <i className="bi bi-twitter-x p-1 circle_size"></i>
+    </a>
+
+    {/* Hashnode Blog */}
+    <a
+      href="https://hashnode.com/@astraforgeio"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Astraforge Blog"
+      title="Blog"
+      className="text-decoration-none"
+    >
+      <i className="bi bi-file-earmark-text-fill p-1 circle_size"></i>
+    </a>
+
+  </div>
+</div>
 
           </div>
 
@@ -90,10 +125,6 @@ const [showPrivacy, setShowPrivacy] = useState(false);
             <div>
               <p>© 2025 Astraforge.io</p>
             </div>
-            {/* <div className='d-inline-flex'>
-              <p className='me-4'>Terms & Conditions</p>
-              <p>Privacy Policy</p>
-            </div> */}
             <div className='d-inline-flex'>
   <p className='me-4' style={{cursor:"pointer"}} onClick={() => setShowTerms(true)}>
     Terms & Conditions

@@ -18,6 +18,7 @@ import Pricing from './Components/DemoVideos/Pricing'
 import IntegrationAll from './Components/Pages/Integration/IntegrationAll'
 import Architecturebtn from './Components/Pages/Architecture/Architecturebtn'
 import DemoPopup from './Components/DemoVideos/DemoPopup'
+import Faq1 from './Components/Pages/FAQ/Faq1'
 
 
 
@@ -47,7 +48,8 @@ function App() {
     <Route path='/pricing' element={<Pricing/>}/>
     <Route path='/integrationall' element={<IntegrationAll/>}/>
     <Route path='/architectureall'element={<Architecturebtn/>}/>
-    <Route path='demopopup' element={<DemoPopup/>}/>
+    <Route path='/demopopup' element={<DemoPopup/>}/>
+    <Route path='/faq' element={<Faq1/>}/>
     
    </Routes>
    </Layout>

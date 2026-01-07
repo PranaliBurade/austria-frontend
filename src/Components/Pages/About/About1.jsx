@@ -56,7 +56,7 @@ const About1 = () => {
             <h3 className='text-primary'>Coverage</h3>
             <p>Ensuring comprehensive quality assurance across all scenarios.</p>
           </div>
-          <div className="glass-card feature disf">
+          <div className="glass-card feature">
             <h3 className='text-primary'>Integration</h3>
             <p>Seamless testing across platforms and environments.</p>
           </div>

@@ -1,189 +1,19 @@
-/* .architecture-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.outer-circle {
-  width: 600px;
-  height: 600px;
-  border: 3px solid #444;
-  border-radius: 50%;
-  position: relative;
-}
-
-/* Center Circle */
-/* .center-circle {
-  width: 180px;
-  height: 180px;
-  background: #444;
-  color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
-
-/* Small Circles */
-/* .small-circle {
-  width: 150px;
-  height: 150px;
-  background: #f5f5f5;
-  border-radius: 50%;
-  border: 2px solid #444;
-  position: absolute;
-  text-align: center;
-  padding: 15px;
-  font-size: 13px;
-}
-
-.small-circle h3 {
-  font-size: 14px;
-  margin-bottom: 8px;
-  color: #222;
-} */
-
-/* 6 Circles positioned around the big circle */
-/* .circle-1 { top: -20px; left: 50%; transform: translateX(-50%); }
-.circle-2 { top: 120px; right: -20px; }
-.circle-3 { bottom: 120px; right: -20px; }
-.circle-4 { bottom: -20px; left: 50%; transform: translateX(-50%); }
-.circle-5 { bottom: 120px; left: -20px; }
-.circle-6 { top: 120px; left: -20px; }  */
-
-/* 
-.architecture-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-
-.outer-circle {
-  width: 650px;
-  height: 650px;
-  border: 4px solid #444;
-  border-radius: 50%;
-  position: relative;
-}
-
-
-.center-circle {
-  width: 220px;
-  height: 220px;
-  background: #444;
-  color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
-.small-circle {
-  width: 180px;
-  height: 180px;
-  background: #f5f5f5;
-  border-radius: 50%;
-  border: 2px solid #444;
-  position: absolute;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-.small-circle h3 {
-  font-size: 15px;
-  margin-bottom: 6px;
-  color: #222;
-}
-
-
-.circle-1 { top: -30px; left: 50%; transform: translateX(-50%); }
-.circle-2 { top: 120px; right: -40px; }
-.circle-3 { bottom: 120px; right: -40px; }
-.circle-4 { bottom: -30px; left: 50%; transform: translateX(-50%); }
-.circle-5 { bottom: 120px; left: -40px; }
-.circle-6 { top: 120px; left: -40px; }
-
-@media (max-width: 900px) {
-  .outer-circle {
-    width: 500px;
-    height: 500px;
-  }
-
-  .small-circle {
-    width: 140px;
-    height: 140px;
-    font-size: 12px;
-    padding: 10px;
-  }
-
-  .center-circle {
-    width: 160px;
-    height: 160px;
-  }
-
-  .circle-1 { top: -20px; }
-  .circle-2 { right: -20px; }
-  .circle-3 { right: -20px; }
-  .circle-4 { bottom: -20px; }
-  .circle-5 { left: -20px; }
-  .circle-6 { left: -20px; }
-}
-
-@media (max-width: 600px) {
-  .outer-circle {
-    width: 100%;
-    height: auto;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .center-circle {
-    margin-bottom: 20px;
-    transform: none;
-    position: relative;
-    top: auto;
-    left: auto;
-  }
-
-  .small-circle {
-    position: relative;
-    margin: 20px 0;
-  }
-}
- */
-
+/* Architecture start */
  .archifont{
   text-align: center;
   margin: 50px 0px;
     font-size: 4rem;
   font-weight: bold;
  color: #4da3ff;
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
  }
 
  .architecture-container {
   display: flex;
   justify-content: center;
-  /* padding: 70px; */
+  
 }
 
-/* DESKTOP (as is) */
+
 .outer-circle {
   width: 650px;
   height: 650px;
@@ -211,12 +41,12 @@
 .small-circle {
   width: 180px;
   height: 180px;
-  /* background: #f5f5f5; */
+  
       background: linear-gradient(to top, rgb(6, 5, 5), rgb(94, 112, 247));
   color: #fff;
   border-radius: 50%;
   border: 2px solid #444;
-  /* position: absolute; */
+
   position: absolute;
   text-align: center;
   padding: 26px;
@@ -229,7 +59,7 @@
   color: #222;
 }
 
-/* ---- POSITIONS ---- */
+
 .circle-1 { top: -30px; left: 50%; transform: translateX(-50%); }
 .circle-2 { top: 120px; right: -40px; }
 .circle-3 { bottom: 120px; right: -40px; }
@@ -237,7 +67,7 @@
 .circle-5 { bottom: 120px; left: -40px; }
 .circle-6 { top: 120px; left: -40px; }
 
-/* ======== TABLET (MD) 768–900px ======== */
+
 @media (max-width: 900px) {
   .outer-circle {
     width: 520px;
@@ -256,7 +86,6 @@
     height: 180px;
   }
 
-  /* Adjusted perfect positions */
   .circle-1 { top: -20px; }
   .circle-2 { top: 90px; right: -25px; }
   .circle-3 { bottom: 90px; right: -25px; }
@@ -265,7 +94,7 @@
   .circle-6 { top: 90px; left: -25px; }
 }
 
-/* ======== MOBILE (SM) below 600px ======== */
+
 @media (max-width: 600px) {
   .outer-circle {
     width: 380px;
@@ -286,7 +115,7 @@
     font-size: 14px;
   }
 
-  /* Perfectly scaled positions */
+  
   .circle-1 { top: -15px; }
   .circle-2 { top: 70px; right: -15px; }
   .circle-3 { bottom: 70px; right: -15px; }
@@ -295,7 +124,7 @@
   .circle-6 { top: 70px; left: -15px; }
 }
 
-/* ======== EXTRA SMALL (360px) ======== */
+
 @media (max-width: 400px) {
   .outer-circle {
     width: 300px;
@@ -334,7 +163,6 @@
   .circle-6 { top: 49px; left: -10px; }
 }
 
-
 .circle-1,
 .circle-4 {
   transform: translateX(-50%) !important;
@@ -343,9 +171,102 @@
 
 
 
+@media (max-width: 320px) {
+  .outer-circle {
+    width: 300px;
+    height: 300px;
+  }
+.fsm{
+    font-size: 18px;
+}
+  .small-circle {
+    width: 80px;
+    height: 80px;
+    padding: 12px;
+    font-size: 2px;
+    overflow: hidden;
+  }
+
+  .center-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 5px !important;
+  }
+
+  .fontsi{
+    font-size: 8px !important;
+}
+.fontsi1{
+    font-size: 5px;
+    
+}
+
+  .circle-1 { top: -10px; }
+  .circle-2 { top: 49px; right: -10px; }
+  .circle-3 { bottom: 49px; right: -10px; }
+  .circle-4 { bottom: -10px; }
+  .circle-5 { bottom: 49px; left: -10px; }
+  .circle-6 { top: 49px; left: -10px; }
+}
+
+
+
+
+
+@media (max-width: 425px) {
+  .outer-circle {
+    width: 300px;
+    height: 300px;
+  }
+  .tuu{
+    text-align: center !important;
+    font-size: 35px !important;
+    padding-right: 40px !important;
+    padding-bottom: 20px !important;
+  }
+.fsm{
+    font-size: 18px;
+}
+  .small-circle {
+    width: 95px;
+    height: 95px;
+    padding: 12px;
+    font-size: 5px;
+    overflow: hidden;
+  }
+
+  .center-circle {
+    width: 110px;
+    height: 110px;
+    font-size: 12px;
+  }
+
+  .fontsi{
+    font-size: 11px !important;
+}
+.fontsi1{
+    font-size: 6px;
+    
+}
+
+  .circle-1 { top: -10px; }
+  .circle-2 { top: 49px; right: -10px; }
+  .circle-3 { bottom: 49px; right: -10px; }
+  .circle-4 { bottom: -10px; }
+  .circle-5 { bottom: 49px; left: -10px; }
+  .circle-6 { top: 49px; left: -10px; }
+}
+
+.circle-1,
+.circle-4 {
+  transform: translateX(-50%) !important;
+}
+/* Architecture end */
+
+
+
 
 /* Pratiksha footer css start */
-/* Footer start  */
 .size1{
   height: 200px;
   width: 380px;
@@ -367,10 +288,7 @@
   background-color: black;
   padding: 50px 50px !important;
 }
-/* .size1{
-  height: 180px !important;
-  width: 290px !important;
-} */
+
 }
 /* Footer end */
 /* Pratiksha footer css end */
@@ -506,7 +424,7 @@ body, html {
 
 @media (max-width: 480px) {
   .custom-box1x {
-    width: 360px;
+    width: 390px !important;
     height: 240px;
   }
 
@@ -515,4 +433,27 @@ body, html {
   }
 }
 
+
+@media (max-width: 375px) {
+  .custom-box1x {
+    width: 350px !important;
+    height: 240px;
+  }
+
+  .usecase-row {
+    gap: 15px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .custom-box1x {
+    width: 295px !important;
+    height: 240px;
+  }
+
+  .usecase-row {
+    gap: 15px;
+  }
+}
 /* ================= USECASES END ================= */

@@ -19,7 +19,7 @@ function IntegrationAll() {
       <div className="col-lg-6 col-md-6 col-12">
         <h1 className="integration-title">
           Seamlessly integrate{" "}
-          <span className="gradient-text">Astraforge.ai</span>{" "}
+          <span className="gradient-text">Astraforge.io</span>{" "}
           into your setup
         </h1>
 

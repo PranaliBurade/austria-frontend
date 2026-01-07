@@ -198,13 +198,13 @@ body {
   height: 250px;
   overflow: hidden;    
   margin: 40px auto;
-  /* background: #070707; */
   
 }
 
 .scroll-content {
   transition: transform 0.00s linear;
 }
+
 
 /* Footer start */
 
@@ -267,8 +267,64 @@ body {
     box-shadow: inset 0 20px 40px -10px rgba(61, 37, 169, 0.8);
 }
 
-/* Footer end */
 
+/* ================================
+   TABLET VIEW FIX (768px – 991px)
+================================ */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Footer padding thoda balanced */
+  .footer7 {
+    padding: 2.5rem 2rem;
+  }
+
+  /* Headings size adjust */
+  .ft_head {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  /* Footer text */
+  .text_footer p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+
+  /* Company overview column spacing */
+  .footer7 .col-md-3,
+  .footer7 .col-md-2 {
+    margin-bottom: 20px;
+  }
+
+  /* Icon size */
+  .circle_size {
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 🔥 SOCIAL ICONS → ONE PER ROW */
+  .footer7 .col-md-2 .d-inline-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Bottom footer alignment */
+  .footer7 > .justify-content-between {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Terms & privacy spacing */
+  .footer7 .d-inline-flex p {
+    font-size: 13px;
+  }
+}
 
 @media (max-width:500px) {
     .mobilenavwidth{
@@ -301,7 +357,7 @@ body {
 }
 
 }
-
+/* Footer end */
 
 /* Features Page start */
 
@@ -381,23 +437,19 @@ body {
   margin-top: 0px;
 }
 
-
-
-
 /* Features Page end */
 
 
+
+
+
 /* Integration page start */
-
-
  .intifont{
    text-align: center;
   margin: 50px 0px;
     font-size: 4rem;
   font-weight: bold;
  color: #4da3ff;
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
  }
 
 
@@ -507,6 +559,10 @@ body {
 
 
 @media (max-width: 500px) {
+  .treiii{
+    text-align: center !important;
+    font-size: 35px !important;
+  }
   .bg-light1 {
     width: 45%;     /* 2 items per row on mobile */
   }
@@ -516,6 +572,10 @@ body {
   }
   .topi{
     padding: 40px 0px;
+  }
+  .tyyuu{
+    text-align: center !important;
+    font-size: 35px !important;
   }
 }
 
@@ -864,11 +924,11 @@ body, html {
   .features {
     grid-template-columns: 1fr;
   }
-  .disf{
+  /* .disf{
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
@@ -882,6 +942,13 @@ body, html {
   }
 }
 /* About Page end */
+
+
+
+
+
+
+
 
 /* Usecases start */
 /* body, html {

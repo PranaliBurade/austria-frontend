@@ -46,7 +46,7 @@ function CircleArchitecture1() {
             position: "relative", // ensure boxes z-index works
             zIndex: 1,}}
     >
-      <h3 className="ps-5 text-primary">Architecture</h3>
+      <h3 className="ps-5 text-primary tuu">Architecture</h3>
     <div className="architecture-container ">
     
       <div className="outer-circle">
